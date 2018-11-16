@@ -15,6 +15,7 @@ import tk.mybatis.spring.annotation.MapperScan;
 // 扫描mybatis mapper包路径
 @MapperScan(basePackages="com.usher.mapper")
 // 扫描 所有需要的包, 包含一些自用的工具类包 所在的路径
+@ComponentScan(basePackages= {"com.usher", "org.n3r.idworker"})
 
 public class Application {
 
