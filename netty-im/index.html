@@ -9,11 +9,81 @@
     <link href="css/header.css" rel="stylesheet"/>
     <script type="text/javascript" charset="utf-8">
       	mui.init();
+      	mui.plusReady(function(){
+      		plus.navigator.setStatusBarBackground("#007AFF");
+      		plus.navigator.setStatusBarStyle("light");
+      	})
     </script>
 </head>
 <body>
 	<header class="mui-bar mui-bar-nav title">
-		<h1 class="mui-title title-color"><b>Im</b></h1>
+		<h1 class="mui-title title-color"><b>MyChat</b></h1>
 	</header>
+	
+	<nav class="mui-bar mui-bar-tab">
+	    <a class="mui-tab-item mui-active" tabindex="0">
+	        <span class="mui-icon mui-icon-weixin"></span>
+	        <span class="mui-tab-label">消息</span>
+	    </a>
+	    <a class="mui-tab-item" tabindex="1">
+	        <span class="mui-icon mui-icon-phone-filled"></span>
+	        <span class="mui-tab-label">通讯录</span>
+	    </a>
+	    <a class="mui-tab-item" tabindex="2">
+	        <span class="mui-icon mui-icon-paperplane"></span>
+	        <span class="mui-tab-label">发现</span>
+	    </a>
+	    <a class="mui-tab-item" tabindex="3">
+	        <span class="mui-icon mui-icon-person-filled"></span>
+	        <span class="mui-tab-label">我</span>
+	    </a>
+	</nav>
+	
+	<script type="text/javascript">
+		var myChatArray = [{
+			pageId: "chatList.html",
+			pageUrl: "chatList.html"
+		},
+		{
+			pageId: "contact.html",
+			pageUrl: "contact.html"
+		},
+		{
+			pageId: "discover.html",
+			pageUrl: "discover.html"
+		},
+		{
+			pageId: "me.html",
+			pageUrl: "me.html"
+		}];
+		var muxinStyle = {
+			top: "44px",
+			bottom: "50px"
+		}
+		mui.plusReady(function(){
+			var indexWebview = plus.webview.currentWebview()
+			
+			for(var i =0;i < myChatArray.length;i++){
+				var myChatPage = plus.webview.create(myChatArray[i].pageUrl,myChatArray[i].pageId,myChatStyle);
+				myChatPage.hide();
+				indexWebview.append(myChatPage);
+			}
+			//默认展示
+			plus.webview.show(myChatArray[0].pageId);
+			//点击
+			mui(".mui-bar-tab").on("tap","a",function(){
+				var tabIndex = this.getAttribute("tabindex");
+				//当前页面
+				plus.webview.show(myChatArray[tabIndex].pageId,"fade-in",200);
+				
+				//其他隐藏
+				for(var i =0;i < myChatArray.length;i++){
+					if(i != tabIndex){
+						plus.webview.hide(myChatArray[i].pageId,"fade-out",200);
+					}
+				}
+			})
+		})
+	</script>
 </body>
 </html> 
