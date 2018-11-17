@@ -1,5 +1,6 @@
 package com.usher.controller;
 
+import com.usher.form.UserForm;
 import com.usher.pojo.Users;
 import com.usher.pojo.bo.UsersBO;
 import com.usher.pojo.vo.UsersVO;
@@ -8,16 +9,20 @@ import com.usher.utils.FastDFSClient;
 import com.usher.utils.FileUtils;
 import com.usher.utils.JsonResult;
 import com.usher.utils.MD5Utils;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.validation.Valid;
 import java.security.NoSuchAlgorithmException;
+import java.util.Objects;
 
 /**
  * @Author: Usher
@@ -25,6 +30,7 @@ import java.security.NoSuchAlgorithmException;
  */
 @RestController
 @RequestMapping("u")
+@Slf4j
 public class UserController {
     @Autowired
     private UserService userService;
@@ -34,7 +40,20 @@ public class UserController {
 
 
     @PostMapping("/registOrLogin")
-    public JsonResult registOrLogin(@RequestBody Users user) throws Exception {
+    //public JsonResult registOrLogin(@RequestBody Users user) throws Exception {
+    //public JsonResult registOrLogin(String username,String password,String cid) throws Exception {
+    public JsonResult registOrLogin(@Valid UserForm userForm,
+                                    BindingResult bindingResult) throws Exception {
+
+        if (bindingResult.hasErrors()) {
+            log.error("参数不正确");
+            throw new Exception(Objects.requireNonNull(bindingResult.getFieldError()).getDefaultMessage());
+        }
+
+        Users user = new Users();
+        user.setUsername(userForm.getUsername());
+        user.setPassword(userForm.getPassword());
+        user.setCid(userForm.getCid());
 
         // 0. 判断用户名和密码不能为空
         if (StringUtils.isBlank(user.getUsername())

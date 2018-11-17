@@ -113,20 +113,21 @@
                 // 获取每台手机的唯一cid
                 var cid = plus.push.getClientInfo().clientid;
                 // 与后端联调
-                mui.ajax(app.serverUrl + "/u/registOrLogin",{
+                mui.ajax(app.serverUrl + "/u/registOrLogin?username="+username.value+
+                "&password=" + txt_password.value + "&cid=" + cid,{
                     data:{
-                        username:username.value,
-                        password:txt_password.value,
-                        cid: cid
+                        //username:username.value,
+                        //password:txt_password.value,
+                        //cid: cid
                     },
                     //data:JSON.stringify({
                     //    username:username.value,
                     //    password:txt_password.value,
                     //    cid: cid
                     //}),
-                    dataType:'json',//服务器返回json格式数据
-                    type:'post',//HTTP请求类型
-                    timeout:10000,//超时时间设置为10秒；
+                    dataType:'json',
+                    type:'post',
+                    timeout:10000,
                     headers:{'Content-Type':'application/json'},
                     success:function(data){
                         //服务器返回响应，根据响应结果，分析是否登录成功；
@@ -149,8 +150,6 @@
                 });
 
             }
-
-
             // 阻止默认时间，阻止默认表单提交
             e.preventDefault();
         });

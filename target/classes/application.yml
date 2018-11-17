@@ -8,3 +8,14 @@ spring:
 mybatis:
   # 指定全局配置文件位置
   config-location: classpath:mybatis/mybatis-config.xml
+fdfs:
+  soTimeout: 1500
+  connectTimeout: 600
+  thumbImage.width: 80
+  thumbImage.height: 80
+  trackerList: 192.168.25.133:22122
+  #trackerList: 122.152.205.72:88
+
+logging:
+  level:
+    com.usher.mapper: debug
