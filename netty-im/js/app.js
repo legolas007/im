@@ -1,7 +1,7 @@
 window.app = {
     nettyServerUrl: 'ws://localhost:8088/ws',
     serverUrl: 'http://localhost:8080',
-    imgServerUrl: 'http://192.168.25.133:22122/usher/',
+    imgServerUrl: 'http://122.152.205.72:88/usher/',
 
     isNotNull:function (str) {
         return str != null && str !== "" && str !== undefined;
