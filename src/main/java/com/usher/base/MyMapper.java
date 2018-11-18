@@ -22,7 +22,7 @@
  * THE SOFTWARE.
  */
 
-package com.usher.mapper;
+package com.usher.base;
 
 import tk.mybatis.mapper.common.Mapper;
 import tk.mybatis.mapper.common.MySqlMapper;

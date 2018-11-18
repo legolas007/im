@@ -2,28 +2,35 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bfb3aaf0-306d-4aad-963e-1d9b7c481b68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/enums/OperatorFriendRequestTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/enums/SearchFriendsStatusEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/form/UserForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/netty/UserChannelRel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/service/SearchService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/usher/service/impl/SearchServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/usher/mapper/UsersMapperCustomTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/usher/service/impl/SearchServiceImplTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-im/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/netty-im/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/netty-im/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/netty-im/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/mapper/ChatMsgMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/mapper/ChatMsgMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/mapper/FriendsRequestMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/mapper/FriendsRequestMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/mapper/MyFriendsMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/mapper/MyFriendsMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/mapper/MyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/base/MyMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapperCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapperCustom.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/usher/utils/MyMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/usher/mapper/MyMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/logback-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UsersMapperCustom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UsersMapperCustom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/usher/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/usher/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/usher/mapper/ChatMsgMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/usher/mapper/ChatMsgMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/usher/mapper/FriendsRequestMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/usher/mapper/FriendsRequestMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/usher/mapper/MyFriendsMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/usher/mapper/MyFriendsMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/usher/mapper/UsersMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/usher/mapper/UsersMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/usher/mapper/UsersMapperCustom.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/usher/mapper/UsersMapperCustom.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/usher/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/usher/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/usher/utils/MyMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/logback-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/logback-spring.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,14 +44,15 @@
     <session id="933798229">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="6" />
+          <entry key="project.closed" value="7" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.61" value="1" />
-          <entry key="project.opened" value="6" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -52,13 +60,13 @@
           <entry key="class" value="1" />
           <entry key="css" value="6" />
           <entry key="html" value="14" />
-          <entry key="java" value="81" />
+          <entry key="java" value="119" />
           <entry key="jpg" value="1" />
           <entry key="js" value="4" />
           <entry key="log" value="1" />
-          <entry key="properties" value="5" />
-          <entry key="xml" value="12" />
-          <entry key="yml" value="6" />
+          <entry key="properties" value="7" />
+          <entry key="xml" value="21" />
+          <entry key="yml" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -67,34 +75,34 @@
           <entry key="CSS" value="6" />
           <entry key="HTML" value="14" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="81" />
+          <entry key="JAVA" value="119" />
           <entry key="JavaScript" value="4" />
           <entry key="Log" value="1" />
-          <entry key="Properties" value="5" />
-          <entry key="XML" value="12" />
-          <entry key="YAML" value="6" />
+          <entry key="Properties" value="7" />
+          <entry key="XML" value="21" />
+          <entry key="YAML" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="1" />
           <entry key="html" value="487" />
-          <entry key="java" value="3207" />
+          <entry key="java" value="4508" />
           <entry key="js" value="378" />
           <entry key="properties" value="54" />
-          <entry key="xml" value="6" />
-          <entry key="yml" value="23" />
+          <entry key="xml" value="28" />
+          <entry key="yml" value="25" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="487" />
-          <entry key="JAVA" value="3207" />
+          <entry key="JAVA" value="4508" />
           <entry key="JavaScript" value="378" />
           <entry key="PLAIN_TEXT" value="1" />
           <entry key="Properties" value="54" />
-          <entry key="XML" value="6" />
-          <entry key="YAML" value="23" />
+          <entry key="XML" value="28" />
+          <entry key="YAML" value="25" />
         </counts>
       </usages-collector>
     </session>
@@ -102,22 +110,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/service/UserService.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UsersMapperCustom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="84" column="19" lean-forward="true" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/pojo/vo/MyFriendsVO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="171">
-              <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
+            <state relative-caret-position="-114">
+              <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -125,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/Application.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+            <state relative-caret-position="92">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,74 +131,70 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/pojo/vo/FriendRequestVO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="401">
+              <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/pojo/bo/UsersBO.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="152">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+            <state relative-caret-position="171">
+              <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/service/impl/UserServiceImpl.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/service/impl/SearchServiceImplTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="20" />
+            <state relative-caret-position="287">
+              <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2855#2856#0" expanded="true" />
-                <element signature="e#2882#2883#0" expanded="true" />
-                <element signature="e#2957#2958#0" expanded="true" />
-                <element signature="e#2984#2985#0" expanded="true" />
-                <element signature="e#3176#3177#0" expanded="true" />
-                <element signature="e#3203#3204#0" expanded="true" />
-                <element signature="e#3477#3478#0" expanded="true" />
-                <element signature="e#3504#3505#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/enums/OperatorFriendRequestTypeEnum.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapperCustom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+            <state relative-caret-position="247">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
               <folding>
-                <element signature="e#363#364#0" expanded="true" />
-                <element signature="e#390#391#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="301">
+              <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/enums/SearchFriendsStatusEnum.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/controller/SearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-              <folding>
-                <element signature="e#453#454#0" expanded="true" />
-                <element signature="e#482#483#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/FastdfsImporter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+            <state relative-caret-position="389">
+              <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -211,10 +203,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/pojo/ChatMsg.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UsersMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="57">
+              <caret line="3" selection-start-line="3" selection-end-line="15" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -224,24 +216,26 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Arquillian JUnit Test Class" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
+        <option value="Arquillian JUnit Test Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>imooc-muxin</find>
-      <find>imooc</find>
       <find>IMoocJSONResult</find>
       <find>JSON</find>
+      <find>manager</find>
+      <find>imooc</find>
     </findStrings>
     <replaceStrings>
       <replace>myChat</replace>
-      <replace>usher</replace>
       <replace>JSONResult</replace>
       <replace>Json</replace>
+      <replace>map</replace>
+      <replace>usher</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -258,15 +252,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/controller/TestController.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/mapper/ChatMsgMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/utils/MyMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/mapper/FriendsRequestMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/mapper/MyFriendsMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/netty/ChatHandler.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/netty/WSServerInitialzer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/netty/WSServer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/NettyBooter.java" />
         <option value="$PROJECT_DIR$/netty-im/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/Application.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/FastdfsImporter.java" />
@@ -284,7 +269,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/usher/pojo/vo/MyFriendsVO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/pojo/vo/UsersVO.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/utils/QRCodeUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/utils/FastDFSClient.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/utils/JsonResult.java" />
@@ -298,15 +282,27 @@
         <option value="$PROJECT_DIR$/src/test/java/com/usher/service/impl/UserServiceImplTest.java" />
         <option value="$PROJECT_DIR$/netty-im/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/form/UserForm.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapperCustom.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/service/UserService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/usher/service/impl/UserServiceImpl.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/enums/OperatorFriendRequestTypeEnum.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/usher/enums/SearchFriendsStatusEnum.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/mapper/MyFriendsMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/mapper/ChatMsgMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/mapper/FriendsRequestMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/netty/UserChannelRel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/service/SearchService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/service/UserService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/base/MyMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/logback-spring.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/service/impl/SearchServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/usher/mapper/UsersMapperCustomTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapperCustom.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis/mapper/UsersMapperCustom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/usher/service/impl/SearchServiceImplTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/usher/controller/SearchController.java" />
       </list>
     </option>
   </component>
@@ -324,8 +320,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1050" />
-    <option name="width" value="878" />
+    <option name="x" value="-8" />
+    <option name="width" value="977" />
     <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager">
@@ -336,7 +332,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -386,7 +381,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="usher" type="462c0819:PsiDirectoryNode" />
-              <item name="enums" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myChatnetty" type="b2602c69:ProjectViewProjectNode" />
@@ -405,16 +400,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="usher" type="462c0819:PsiDirectoryNode" />
               <item name="pojo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="myChatnetty" type="b2602c69:ProjectViewProjectNode" />
-              <item name="im" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="usher" type="462c0819:PsiDirectoryNode" />
-              <item name="pojo" type="462c0819:PsiDirectoryNode" />
-              <item name="bo" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="myChatnetty" type="b2602c69:ProjectViewProjectNode" />
@@ -497,12 +482,31 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="usher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myChatnetty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="usher" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="myChatnetty" type="b2602c69:ProjectViewProjectNode" />
+              <item name="im" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="usher" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -513,7 +517,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542466563559" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542522877999" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="Arquillian JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
@@ -523,8 +527,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.usher.mapper" />
       <recent name="com.usher.service.impl" />
       <recent name="com.usher.service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\im\src\main\resources\mybatis" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\im\src\main\resources" />
@@ -532,12 +543,6 @@
       <recent name="D:\im\netty-im\css" />
       <recent name="D:\im\netty-im" />
       <recent name="D:\im\src\main\java\com\usher\utils" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\im\src\main\resources\mybatis" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -553,27 +558,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.Application">
-    <configuration name="MD5Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.usher.utils.MD5Utils" />
-      <module name="im" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.usher.mapper.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserServiceImplTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchServiceImplTest.passFriendRequest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="im" />
       <extension name="coverage">
         <pattern>
@@ -582,7 +573,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.usher.service.impl" />
-      <option name="MAIN_CLASS_NAME" value="com.usher.service.impl.UserServiceImplTest" />
+      <option name="MAIN_CLASS_NAME" value="com.usher.service.impl.SearchServiceImplTest" />
+      <option name="METHOD_NAME" value="passFriendRequest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchServiceImplTest.queryMyFriends" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="im" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.usher.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.usher.service.impl" />
+      <option name="MAIN_CLASS_NAME" value="com.usher.service.impl.SearchServiceImplTest" />
+      <option name="METHOD_NAME" value="queryMyFriends" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -599,6 +609,23 @@
       <option name="PACKAGE_NAME" value="com.usher.service.impl" />
       <option name="MAIN_CLASS_NAME" value="com.usher.service.impl.UserServiceImplTest" />
       <option name="METHOD_NAME" value="queryUserForLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersMapperCustomTest.queryMyFriends" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="im" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.usher.mapper.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.usher.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.usher.mapper.UsersMapperCustomTest" />
+      <option name="METHOD_NAME" value="queryMyFriends" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
       <method v="2">
@@ -634,16 +661,18 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.Application" />
-      <item itemvalue="Application.MD5Utils" />
-      <item itemvalue="JUnit.UserServiceImplTest" />
       <item itemvalue="JUnit.UserServiceImplTest.queryUserForLogin" />
+      <item itemvalue="JUnit.SearchServiceImplTest.passFriendRequest" />
+      <item itemvalue="JUnit.SearchServiceImplTest.queryMyFriends" />
+      <item itemvalue="JUnit.UsersMapperCustomTest.queryMyFriends" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Spring Boot.Application" />
+        <item itemvalue="JUnit.SearchServiceImplTest.queryMyFriends" />
+        <item itemvalue="JUnit.UsersMapperCustomTest.queryMyFriends" />
+        <item itemvalue="JUnit.SearchServiceImplTest.passFriendRequest" />
         <item itemvalue="JUnit.UserServiceImplTest.queryUserForLogin" />
-        <item itemvalue="JUnit.UserServiceImplTest" />
-        <item itemvalue="Application.MD5Utils" />
       </list>
     </recent_temporary>
   </component>
@@ -663,37 +692,50 @@
       <workItem from="1542432400428" duration="1488000" />
       <workItem from="1542436956402" duration="99000" />
       <workItem from="1542440782874" duration="11217000" />
+      <workItem from="1542508890370" duration="11534000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="UserServiceImplTest - 2018.11.17 at 13h 34m 11s.xml">
-      <configuration name="UserServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceImplTest - 2018.11.17 at 13h 36m 01s.xml">
-      <configuration name="UserServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceImplTest - 2018.11.17 at 13h 36m 42s.xml">
-      <configuration name="UserServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceImplTest - 2018.11.17 at 13h 36m 52s.xml">
-      <configuration name="UserServiceImplTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceImplTest - 2018.11.17 at 13h 40m 15s.xml">
-      <configuration name="UserServiceImplTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserServiceImplTest_queryUserForLogin - 2018.11.17 at 13h 42m 55s.xml">
       <configuration name="UserServiceImplTest.queryUserForLogin" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="SearchServiceImplTest_passFriendRequest - 2018.11.18 at 12h 36m 59s.xml">
+      <configuration name="SearchServiceImplTest.passFriendRequest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceImplTest_passFriendRequest - 2018.11.18 at 13h 43m 05s.xml">
+      <configuration name="SearchServiceImplTest.passFriendRequest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceImplTest_queryMyFriends - 2018.11.18 at 13h 46m 59s.xml">
+      <configuration name="SearchServiceImplTest.queryMyFriends" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersMapperCustomTest_queryMyFriends - 2018.11.18 at 13h 50m 51s.xml">
+      <configuration name="UsersMapperCustomTest.queryMyFriends" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UsersMapperCustomTest_queryMyFriends - 2018.11.18 at 13h 52m 56s.xml">
+      <configuration name="UsersMapperCustomTest.queryMyFriends" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceImplTest_queryMyFriends - 2018.11.18 at 14h 07m 29s.xml">
+      <configuration name="SearchServiceImplTest.queryMyFriends" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceImplTest_queryMyFriends - 2018.11.18 at 14h 09m 46s.xml">
+      <configuration name="SearchServiceImplTest.queryMyFriends" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceImplTest_queryMyFriends - 2018.11.18 at 14h 17m 37s.xml">
+      <configuration name="SearchServiceImplTest.queryMyFriends" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchServiceImplTest_queryMyFriends - 2018.11.18 at 14h 18m 19s.xml">
+      <configuration name="SearchServiceImplTest.queryMyFriends" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32872000" />
+    <option name="totallyTimeSpent" value="44406000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2855228" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20241287" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -705,15 +747,15 @@
       <window_info anchor="bottom" id="Java Enterprise" order="1" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Find" order="3" weight="0.32998565" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.3815603" />
+      <window_info anchor="bottom" id="Run" order="4" sideWeight="0.49932975" weight="0.34184396" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39858156" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.32907802" />
       <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32855093" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50067025" side_tool="true" weight="0.25957447" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32765958" />
       <window_info anchor="bottom" id="Docker" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -735,116 +777,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/netty-im/plugin/v3.1.6/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-im/fontico/demo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/n3r/idworker/utils/Ip.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/n3r/idworker/Code.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UsersMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/ChatMsgMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/FriendsRequestMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/MyFriendsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="47" selection-start-line="3" selection-start-column="47" selection-end-line="3" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/netty-im/myQRCode.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="86" column="37" selection-start-line="86" selection-start-column="37" selection-end-line="86" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/mapper/ChatMsgMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/pojo/FriendsRequest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/org/n3r/idworker/Sid.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/utils/QRCodeUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/utils/MD5Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/utils/FileUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="113" column="37" lean-forward="true" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/pojo/Users.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
@@ -899,13 +831,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/service/UserServiceTest.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/service/impl/UserServiceImplTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="427">
-          <caret line="30" column="16" selection-start-line="30" selection-start-column="16" selection-end-line="30" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-im/me.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -937,16 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/utils/FastDFSClient.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-412">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/netty-im/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="311">
@@ -954,27 +869,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/utils/JsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="55" column="37" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -989,59 +887,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="361">
           <caret line="19" column="23" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/log/logback.2018-11-17.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UsersMapperCustom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="13" lean-forward="true" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/mapper/MyMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapperCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/pojo/vo/UsersVO.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1050,13 +900,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/pojo/vo/MyFriendsVO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="34" selection-start-line="9" selection-start-column="34" selection-end-line="9" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -1074,6 +917,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/FastdfsImporter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/pojo/ChatMsg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -1081,20 +934,65 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/enums/SearchFriendsStatusEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="84" column="19" lean-forward="true" selection-start-line="84" selection-start-column="19" selection-end-line="84" selection-end-column="19" />
+        <state relative-caret-position="218">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/github/tobato/fastdfs-client/1.26.2/fastdfs-client-1.26.2-sources.jar!/com/github/tobato/fastdfs/service/FastFileStorageClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/utils/FastDFSClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/FastdfsImporter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/pojo/MyFriends.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
+        <state relative-caret-position="95">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/netty/UserChannelRel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="11" column="27" lean-forward="true" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#330#331#0" expanded="true" />
+            <element signature="e#372#373#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#462#463#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1208">
+          <caret line="49" column="23" lean-forward="true" selection-start-line="49" selection-start-column="23" selection-end-line="49" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="503">
+          <caret line="43" selection-start-line="43" selection-end-line="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1103,27 +1001,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/service/impl/UserServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="93" column="8" selection-start-line="93" selection-start-column="8" selection-end-line="93" selection-end-column="20" />
+        <state relative-caret-position="332">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2855#2856#0" expanded="true" />
-            <element signature="e#2882#2883#0" expanded="true" />
-            <element signature="e#2957#2958#0" expanded="true" />
-            <element signature="e#2984#2985#0" expanded="true" />
-            <element signature="e#3176#3177#0" expanded="true" />
-            <element signature="e#3203#3204#0" expanded="true" />
-            <element signature="e#3477#3478#0" expanded="true" />
-            <element signature="e#3504#3505#0" expanded="true" />
+            <element signature="e#5307#5308#0" expanded="true" />
+            <element signature="e#5367#5368#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/Application.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/base/MyMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="465">
+          <caret line="35" column="17" selection-start-line="35" selection-start-column="17" selection-end-line="35" selection-end-column="17" />
           <folding>
+            <element signature="e#0#1452#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -1131,22 +1024,185 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/enums/OperatorFriendRequestTypeEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
+        <state relative-caret-position="133">
+          <caret line="7" column="12" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/service/impl/UserServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="17" selection-start-line="17" selection-end-line="18" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/service/impl/SearchServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="138" column="36" lean-forward="true" selection-start-line="138" selection-start-column="36" selection-end-line="138" selection-end-column="36" />
           <folding>
-            <element signature="e#363#364#0" expanded="true" />
-            <element signature="e#390#391#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#5005#5006#0" expanded="true" />
+            <element signature="e#5068#5069#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/enums/SearchFriendsStatusEnum.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/service/SearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        <state relative-caret-position="19">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
-            <element signature="e#453#454#0" expanded="true" />
-            <element signature="e#482#483#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/mapper/MyFriendsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/mapper/FriendsRequestMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/MyFriendsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/ChatMsgMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/mapper/ChatMsgMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/mapper/UsersMapperCustomTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/FriendsRequestMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="55" lean-forward="true" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/pojo/vo/MyFriendsVO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UsersMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/mapper/UsersMapperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/usher/service/impl/SearchServiceImplTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mapper/UsersMapperCustom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-114">
+          <caret line="12" column="12" lean-forward="true" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="16" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="23" column="26" selection-start-line="23" selection-start-column="26" selection-end-line="23" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/usher/controller/SearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="389">
+          <caret line="94" lean-forward="true" selection-start-line="94" selection-end-line="94" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

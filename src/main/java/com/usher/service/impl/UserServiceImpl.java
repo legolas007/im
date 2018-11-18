@@ -1,10 +1,18 @@
 package com.usher.service.impl;
 
+import com.usher.enums.SearchFriendsStatusEnum;
+import com.usher.mapper.FriendsRequestMapper;
+import com.usher.mapper.MyFriendsMapper;
+import com.usher.mapper.UsersMapperCustom;
+import com.usher.netty.UserChannelRel;
+import com.usher.pojo.FriendsRequest;
+import com.usher.pojo.MyFriends;
 import com.usher.pojo.vo.FriendRequestVO;
 import com.usher.pojo.vo.MyFriendsVO;
 import com.usher.utils.FastDFSClient;
 import com.usher.utils.FileUtils;
 import com.usher.utils.QRCodeUtils;
+import io.netty.channel.Channel;
 import org.n3r.idworker.Sid;
 import com.usher.mapper.UsersMapper;
 import com.usher.pojo.Users;
@@ -18,6 +26,7 @@ import tk.mybatis.mapper.entity.Example;
 import tk.mybatis.mapper.entity.Example.Criteria;
 
 import java.io.IOException;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -89,40 +98,6 @@ public class UserServiceImpl implements UserService {
         return queryUserById(user.getId());
     }
 
-    @Override
-    public Integer preconditionSearchFriends(String myUserId, String friendUsername) {
-        return null;
-    }
-
-    @Override
-    public Users queryUserInfoByUsername(String username) {
-        return null;
-    }
-
-    @Override
-    public void sendFriendRequest(String myUserId, String friendUsername) {
-
-    }
-
-    @Override
-    public List<FriendRequestVO> queryFriendRequestList(String acceptUserId) {
-        return null;
-    }
-
-    @Override
-    public void deleteFriendRequest(String sendUserId, String acceptUserId) {
-
-    }
-
-    @Override
-    public void passFriendRequest(String sendUserId, String acceptUserId) {
-
-    }
-
-    @Override
-    public List<MyFriendsVO> queryMyFriends(String userId) {
-        return null;
-    }
 
     @Transactional(propagation = Propagation.SUPPORTS)
     Users queryUserById(String userId) {

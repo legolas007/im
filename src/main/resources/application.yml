@@ -8,6 +8,8 @@ spring:
 mybatis:
   # 指定全局配置文件位置
   config-location: classpath:mybatis/mybatis-config.xml
+  # 指定sql映射文件位置
+  mapper-locations: classpath:mybatis/mapper/*.xml
 fdfs:
   soTimeout: 1500
   connectTimeout: 600
@@ -19,4 +21,4 @@ fdfs:
 
 logging:
   level:
-    com.usher.mapper: debug
+    com.usher.mapper: info
