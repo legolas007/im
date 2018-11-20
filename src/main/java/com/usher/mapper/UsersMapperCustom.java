@@ -8,7 +8,7 @@ import com.usher.pojo.vo.FriendRequestVO;
 import com.usher.pojo.vo.MyFriendsVO;
 
 import org.springframework.stereotype.Repository;
-
+@Repository
 public interface UsersMapperCustom extends MyMapper<Users> {
 
     public List<FriendRequestVO> queryFriendRequestList(String acceptUserId);

@@ -55,7 +55,6 @@ public class UserController {
         user.setPassword(userForm.getPassword());
         user.setCid(userForm.getCid());
 
-        // 0. 判断用户名和密码不能为空
         if (StringUtils.isBlank(user.getUsername())
                 || StringUtils.isBlank(user.getPassword())) {
             return JsonResult.errorMsg("用户名或密码不能为空...");

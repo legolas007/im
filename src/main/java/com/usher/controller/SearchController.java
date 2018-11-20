@@ -114,23 +114,34 @@ public class SearchController {
                 || operType == null) {
             return JsonResult.errorMsg("");
         }
-
-        // 1. 如果operType 没有对应的枚举值，则直接抛出空错误信息
         if (StringUtils.isBlank(OperatorFriendRequestTypeEnum.getMsgByType(operType))) {
             return JsonResult.errorMsg("");
         }
 
         if (operType.equals(OperatorFriendRequestTypeEnum.IGNORE.type)) {
-            // 2. 判断如果忽略好友请求，则直接删除好友请求的数据库表记录
+            //  判断如果忽略好友请求，则直接删除好友请求的数据库表记录
             searchService.deleteFriendRequest(sendUserId, acceptUserId);
         } else if (operType.equals(OperatorFriendRequestTypeEnum.PASS.type)) {
-            // 3. 判断如果是通过好友请求，则互相增加好友记录到数据库对应的表
+            // 判断如果是通过好友请求，则互相增加好友记录到数据库对应的表
             //	   然后删除好友请求的数据库表记录
             searchService.passFriendRequest(sendUserId, acceptUserId);
         }
 
-        // 4. 数据库查询好友列表
+        // 数据库查询好友列表
         List<MyFriendsVO> myFirends = searchService.queryMyFriends(acceptUserId);
+
+        return JsonResult.ok(myFirends);
+    }
+
+    /**
+     * @Description: 查询我的好友列表
+     */
+    @PostMapping("/myFriends")
+    public JsonResult myFriends(String userId) {
+        if (StringUtils.isBlank(userId)) {
+            return JsonResult.errorMsg("");
+        }
+        List<MyFriendsVO> myFirends = searchService.queryMyFriends(userId);
 
         return JsonResult.ok(myFirends);
     }

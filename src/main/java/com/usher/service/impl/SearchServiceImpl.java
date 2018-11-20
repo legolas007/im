@@ -1,16 +1,22 @@
 package com.usher.service.impl;
 
+import com.usher.enums.MsgActionEnum;
 import com.usher.enums.SearchFriendsStatusEnum;
 import com.usher.mapper.FriendsRequestMapper;
 import com.usher.mapper.MyFriendsMapper;
 import com.usher.mapper.UsersMapper;
 import com.usher.mapper.UsersMapperCustom;
+import com.usher.netty.DataContent;
+import com.usher.netty.UserChannelRel;
 import com.usher.pojo.FriendsRequest;
 import com.usher.pojo.MyFriends;
 import com.usher.pojo.Users;
 import com.usher.pojo.vo.FriendRequestVO;
 import com.usher.pojo.vo.MyFriendsVO;
 import com.usher.service.SearchService;
+import com.usher.utils.JsonUtils;
+import io.netty.channel.Channel;
+import io.netty.handler.codec.http.websocketx.TextWebSocketFrame;
 import org.n3r.idworker.Sid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -126,6 +132,17 @@ public class SearchServiceImpl implements SearchService {
         saveFriends(sendUserId, acceptUserId);
         saveFriends(acceptUserId, sendUserId);
         deleteFriendRequest(sendUserId, acceptUserId);
+
+        Channel sendChannel = UserChannelRel.get(sendUserId);
+        if (sendChannel != null) {
+            // 使用websocket主动推送消息到请求发起者，更新他的通讯录列表为最新
+            DataContent dataContent = new DataContent();
+            dataContent.setAction(MsgActionEnum.PULL_FRIEND.type);
+
+            sendChannel.writeAndFlush(
+                    new TextWebSocketFrame(JsonUtils.objectToJson(dataContent))
+            );
+        }
 
     }
 
