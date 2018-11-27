@@ -58,8 +58,8 @@
 			
 			function onmarked( type, result ) {
 				if (type === 0) {
-					var content = result.split("muxin_qrcode:");
-					if (content.length != 2) {
+					var content = result.split("u_qrcode:");
+					if (content.length !== 2) {
 						mui.alert(result)
 					} else {
 						var friendUsername = content[1];
@@ -78,7 +78,7 @@
 								//服务器返回响应
 								plus.nativeUI.closeWaiting();
 								
-								if (data.status == 200) {
+								if (data.status === 200) {
 									
 									mui.openWindow({
 										url: "searchFriendsResult.html",

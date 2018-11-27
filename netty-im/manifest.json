@@ -125,5 +125,93 @@
 				}
 			}
 		}
+	},
+	"dependencies": {
+		"pages": {
+			"index.html": {
+				"resources": [
+					"chatlist.html"
+				],
+				"refer": [
+					"me.html",
+					"discover.html",
+					"contact.html"
+				],
+				"priority": 0
+			},
+			"login.html": {
+				"resources": [],
+				"refer": [
+					"index.html"
+				],
+				"priority": 0
+			},
+			"me.html": {
+				"resources": [],
+				"refer": [
+					"myface.html",
+					"mynickname.html",
+					"myQRCode.html",
+					"login.html"
+				],
+				"priority": 0
+			},
+			"myface.html": {
+				"resources": [],
+				"refer": [
+					"plugin/v3.1.6/myface-uploader.html"
+				],
+				"priority": 0
+			},
+			"discover.html": {
+				"resources": [],
+				"refer": [
+					"searchFriends.html",
+					"scanme.html"
+				],
+				"priority": 0
+			},
+			"searchFriends.html": {
+				"resources": [],
+				"refer": [
+					"searchFriendsResult.html"
+				],
+				"priority": 0
+			},
+			"contact.html": {
+				"resources": [],
+				"refer": [
+					"chatting.html"
+				],
+				"priority": 0
+			},
+			"chatlist.html": {
+				"resources": [],
+				"refer": [
+					"chatting.html"
+				],
+				"priority": 0
+			}
+		},
+		"idle": {
+			"resources": [
+				"fontico/demo.css",
+				"fontico/demo_unicode.html",
+				"fontico/iconfont.ttf",
+				"fontico/iconfont.eot",
+				"fonts/mui.ttf",
+				"fontico/iconfont.css",
+				"css/mui.css",
+				"css/header.css",
+				"fontico/demo_fontclass.html",
+				"js/mui.min.js",
+				"fontico/iconfont.js",
+				"fontico/iconfont.woff",
+				"css/mui.min.css",
+				"js/mui.js",
+				"fontico/iconfont.svg",
+				"fontico/demo_symbol.html"
+			]
+		}
 	}
 }

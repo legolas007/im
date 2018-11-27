@@ -23,6 +23,9 @@ public enum SearchFriendsStatusEnum {
     public Integer getStatus() {
         return status;
     }
+    public String getMsg() {
+        return msg;
+    }
 
     public static String getMsgByKey(Integer status) {
         for (SearchFriendsStatusEnum type : SearchFriendsStatusEnum.values()) {

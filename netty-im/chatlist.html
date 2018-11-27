@@ -23,7 +23,7 @@
 	
 	        .red-point::before{
 	          content: " ";
-	          border: 5px solid #C9394A;/*设置红色*/
+	          border: 5px solid #007aff;
 	          border-radius:5px;/*设置圆角*/
 	          position: absolute;
 	          z-index: 3000;
@@ -42,44 +42,7 @@
 			</ul>
 			
 			<ul id="ul_chatSnapshot" class="mui-table-view">
-				<!--<li class="mui-table-view-cell mui-media">
-					<div class="mui-slider-right mui-disabled">
-						<a class="mui-btn mui-btn-red">删除</a>
-					</div>
-		            <div class="mui-slider-handle mui-media-body">
-			            <img class="mui-media-object mui-pull-left" src="image/face-default-cat.png"/>
-			            	<span class="red-point">慕课网</span>
-			            <p class="mui-ellipsis">这里是聊天内容...</p>
-		            </div>
-			    </li>-->
-			   <!-- <li class="mui-table-view-cell mui-media">
-		            <div class="mui-media-body">
-			            <img class="mui-media-object mui-pull-left" src="image/face-default-cat.png"/>
-			            	甲
-			            <p class="mui-ellipsis">这里是聊天内容...</p>
-		            </div>
-			    </li>
-			    <li class="mui-table-view-cell mui-media">
-		            <div class="mui-media-body">
-			            <img class="mui-media-object mui-pull-left" src="image/face-default-cat.png"/>
-			            	乙
-			            <p class="mui-ellipsis">这里是聊天内容...</p>
-		            </div>
-			    </li>
-			    <li class="mui-table-view-cell mui-media">
-		            <div class="mui-media-body">
-			            <img class="mui-media-object mui-pull-left" src="image/face-default-cat.png"/>
-			            	丙
-			            <p class="mui-ellipsis">这里是聊天内容...</p>
-		            </div>
-			    </li>
-			    <li class="mui-table-view-cell mui-media">
-		            <div class="mui-media-body">
-			            <img class="mui-media-object mui-pull-left" src="image/face-default-cat.png"/>
-			            	丁
-			            <p class="mui-ellipsis">这里是聊天内容...</p>
-		            </div>
-			    </li>-->
+
 			</ul>
 		</div>
 		
@@ -141,12 +104,10 @@
 					
 					// 获取朋友id
 					var friendUserId = me.getAttribute("friendUserId");
-					
-					// 1. 删除本地聊天记录
 					app.deleteUserChatHistory(user.id, friendUserId);
-					// 2. 删除本地聊天快照
+					//  删除本地聊天快照
 					app.deleteUserChatSnapshot(user.id, friendUserId);
-					// 3. 移除当前用户操作的dom节点
+					// 移除当前用户操作的dom节点
 					var li = me.parentNode.parentNode;	// 获取li标签
 					var ul_chatSnapshot = document.getElementById("ul_chatSnapshot");
 					ul_chatSnapshot.removeChild(li);	// 删除li标签
@@ -162,8 +123,8 @@
 						
 						// 如果当前的状态已经连接，那就不需要重复初始化websocket
 						if (CHAT.socket != null 
-							&& CHAT.socket != undefined 
-							&& CHAT.socket.readyState == WebSocket.OPEN) {
+							&& CHAT.socket !== undefined
+							&& CHAT.socket.readyState === WebSocket.OPEN) {
 							return false;
 						}
 						
@@ -180,8 +141,8 @@
 					
 					// 如果当前websocket的状态是已打开，则直接发送， 否则重连
 					if (CHAT.socket != null 
-							&& CHAT.socket != undefined  
-							&& CHAT.socket.readyState == WebSocket.OPEN) {
+							&& CHAT.socket !== undefined
+							&& CHAT.socket.readyState === WebSocket.OPEN) {
 							CHAT.socket.send(msg);
 					} else {
 						// 重连websocket
@@ -288,13 +249,10 @@
 					headers:{'Content-Type':'application/json'},	              
 					success:function(data){
 						
-						if (data.status == 200) {
+						if (data.status === 200) {
 							var unReadMsgList = data.data;
 							console.log(JSON.stringify(unReadMsgList));
-							
-							// 1. 保存聊天记录到本地
-							// 2. 保存聊天快照到本地
-							// 3. 对这些未签收的消息，批量签收
+
 							for (var i = 0 ; i < unReadMsgList.length ; i ++) {
 								var msgObj = unReadMsgList[i];
 								// 逐条存入聊天记录
@@ -371,7 +329,7 @@
 					headers:{'Content-Type':'application/json'},	              
 					success:function(data){
 						
-						if (data.status == 200) {
+						if (data.status === 200) {
 							var contactList = data.data;
 							app.setContactList(contactList);
 						}
@@ -392,7 +350,7 @@
 					headers:{'Content-Type':'application/json'},	              
 					success:function(data){
 						//服务器返回响应
-						if (data.status == 200) {
+						if (data.status === 200) {
 							var friendRequestList = data.data;
 							
 							var ul_friend_request_list = document.getElementById("ul_friend_request_list");

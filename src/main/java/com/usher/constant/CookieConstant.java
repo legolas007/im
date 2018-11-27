@@ -4,5 +4,9 @@ package com.usher.constant;
  * @Author: Usher
  * @Description:
  */
-public class CookieConstant {
+public interface CookieConstant {
+
+    String TOKEN = "token";
+
+    Integer EXPIRE = 7200;
 }

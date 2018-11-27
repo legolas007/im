@@ -70,7 +70,7 @@
 				
 				img_friend_face.src = app.imgServerUrl + yourFriend.faceImage;
 				lab_friend_nickname.innerHTML = yourFriend.nickname;
-				p_friend_username.innerHTML = "慕信号：" + yourFriend.username;
+				p_friend_username.innerHTML = "UIM号：" + yourFriend.username;
 				
 				// 发送添加好友的请求
 				var btn_add_friend = document.getElementById("btn_add_friend");
@@ -88,7 +88,7 @@
 							//服务器返回响应
 							plus.nativeUI.closeWaiting();
 							
-							if (data.status == 200) {
+							if (data.status === 200) {
 								
 								app.showToast("好友请求已发送...", "success");
 								

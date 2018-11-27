@@ -14,12 +14,13 @@
 		<div id="receiveMsg" style="background-color: gainsboro;"></div>
 		
 		<script type="application/javascript">
-			
+            var nettyServerUrl = 'ws://192.168.25.1:8088/ws';
 			window.CHAT = {
 				socket: null,
 				init: function() {
 					if (window.WebSocket) {
-						CHAT.socket = new WebSocket("ws://localhost:8088/ws");
+
+						CHAT.socket = new WebSocket(nettyServerUrl);
 						CHAT.socket.onopen = function() {
 							console.log("连接建立成功...");
 						},

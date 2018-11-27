@@ -120,7 +120,7 @@
 			// 获取英文字母所在数组的位置
 			function getOrderOfEnWords(enChar) {
 				for (var i = 0 ; i < enWords.length ; i ++) {
-					if (enWords[i] == enChar) {
+					if (enWords[i] === enChar) {
 						return i;
 					}
 				}
@@ -130,22 +130,18 @@
 			
 			// 从缓存中获取联系人列表，并且渲染到页面
 			function renderContactPage() {
-				// 1. 获取联系人列表
 				var friendList = app.getContactList();
-				// 2. 循环好友列表，转换为拼音
+				// 循环好友列表，转换为拼音
 				for (var i = 0 ; i < friendList.length ; i ++) {
 					var friend = friendList[i];
-					// 2.1 转换拼音
+
 					var pingyin = words.convertPinyin(friend.friendNickname);
-					// 2.2 截取拼音的首字母
 					var firstChar = pingyin.substr(0, 1).toUpperCase();
-					// 2.3 获取首字母在二维数组中的位置
+					//  获取首字母在二维数组中的位置
 					var order = getOrderOfEnWords(firstChar);
-					// 2.4 获得顺序之后，塞入朋友
+					// 获得顺序之后，塞入朋友
 					contactArray[order].push(friend);
 				}
-				
-				// 3. 构建通讯录html进行渲染
 				var contactHtml = '';
 				for (var i = 0 ; i < contactArray.length ; i ++ ) {
 					var friendArray = contactArray[i];
@@ -199,7 +195,7 @@
 					headers:{'Content-Type':'application/json'},	              
 					success:function(data){
 						
-						if (data.status == 200) {
+						if (data.status === 200) {
 							var contactList = data.data;
 							app.setContactList(contactList);
 						}
